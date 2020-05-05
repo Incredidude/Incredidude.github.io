@@ -1,0 +1,210 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 8vh;
+    background-color: white;
+    font-family:corbel;
+}
+p{
+    font-family:corbel;
+}
+#logo{
+    position: absolute;
+    display: block;
+    background: url(img/FairyF-03.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 130px;
+    text-indent:-666em;
+    overflow:hidden;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+    padding-right: 30px;
+}
+.nav-links a{
+   text-decoration: none;
+   color: black;
+   letter-spacing: 3px;
+   font-weight: 500px;
+   font-size: 20px; 
+}
+.nav-links a:hover{
+   color: rgb(183,103,129);
+   text-decoration: underline;
+}
+.barra3{
+    display: none;
+    cursor: pointer;
+}
+.barra3 div{
+    width: 35px;
+    height: 4px;
+    background-color: rgb(183,103,129);
+    margin: 5px;
+}
+@media screen and (max-width:1024px)
+{
+    .nav-links{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px)
+{
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links {
+       position:absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: blue;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .barra3{
+        display: block;
+
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+footer{
+    background-color: #333333;
+    padding: 30px 0px;
+    clear: both;
+    height:160px;
+    position: absolute;
+    width:100%;
+}
+#tarjetas img{
+    width: 50px;
+    height:30px;
+}
+#redes img{
+    width: 50px;
+    height:50px;   
+    padding-left: 5px; 
+}
+footer p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#faq{
+  background-color: rgb(252, 213, 196);
+  overflow:auto;
+  position: relative;
+  min-height: 150px;
+  border: 1px solid black;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 170px;
+  margin-left: 170px;
+}
+#login{
+    background-color: rgb(252, 213, 196);
+    overflow:auto;
+    position: relative;
+    min-height: 150px;
+}
+#voz{
+    background-color: rgb(252, 213, 196);
+    overflow:auto;
+    position: relative;
+    min-height: 150px;
+}
+#registro{
+    background-color: rgb(252, 213, 196);
+    overflow:auto;
+    position: relative;
+    min-height: 150px;
+}
+.preguntas {
+    font-family: garamond;
+    text-align: center;
+    color: rgb(206, 89, 134);
+  }
+.respuestas {
+    text-align: center;
+  }
+.titulo {
+    text-align: center;
+  }
+a{
+    color: rgb(206, 89, 134);
+}
+#linksub{
+    text-align: center;
+    font-size: 40px;
+}
+
+.autores{
+    color:rgb(129, 0, 80);
+    text-align: center;
+}
+.card-header{
+    text-align: center;
+    color: black;
+}
+.comentarios{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.bg-success{
+    background-color: #28c745;
+}
+.bg-primary{
+    background-color: #007bff;
+}
+.bg-info{
+    background-color: #17c2b8;
+}
+.bg-warning{
+    background-color: #ffc107;
+}
+.bg-danger{
+    background-color: #dc3545;
+}
+.bg-secondary{
+    background-color: #6c757d;
+}
+.bg-light{
+    background-color: #f8f9f9;
+}
+.bg-dark{
+    background-color: #343a40;
+}
